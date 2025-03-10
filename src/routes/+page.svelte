@@ -132,9 +132,20 @@
 	{#if errorMessage}
 	  <div class="text-[#D91B42] text-base md:text-xl mt-5 border border-red-800 p-1 w-[50%]  text-center mx-auto bg-[#F8D7DA] " >{errorMessage}</div>
 	{/if}
+
+	<div class="mt-10">
+		<p>Day :  {day}</p>
+		<p>Month :  {month}</p>
+		<p>Year : {year}</p>
+
+		{#if  !age}
+		<p class="text-black font-bold text-xl md:text-3xl  mx-auto mt-10">Age : </p>
+			
+		{/if}
+	</div>
   
 	{#if isValid && age}
-	  <div class="text-black font-bold text-xl md:text-3xl  text-center mx-auto mt-10">Your age is: {age}</div>
+	  <div class="text-black font-bold text-xl md:text-3xl  mx-auto mt-10">Age: {age}</div>
 	{/if}
   </div>
   
