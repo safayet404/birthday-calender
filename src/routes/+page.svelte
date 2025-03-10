@@ -94,10 +94,10 @@
 	}
   </script>
   
-  <div class="container mx-auto mt-10">
-	<h1 class="font-bold text-3xl text-black mb-10">Date of Birth (Age minimum 12 years)</h1>
+  <div class="container mx-auto mt-10 p-5 sm:p-2">
+	<h1 class="font-bold text-lg md:text-3xl text-black mb-10">Date of Birth (Age minimum 12 years)</h1>
   
-	<div class="grid grid-cols-3 gap-10">
+	<div class="grid grid-cols-1 sm:grid-cols-3 gap-10">
 	  <div class="flex flex-col">
 		<label for="day" class="font-semibold text-gray-700">Day:</label>
 		<select id="day" bind:value={day} class="mt-2 p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500">
@@ -130,11 +130,11 @@
 	</div>
   
 	{#if errorMessage}
-	  <div class="text-[#D91B42] text-xl mt-5 border border-red-800 p-1 w-[50%]  text-center mx-auto bg-[#F8D7DA] " >{errorMessage}</div>
+	  <div class="text-[#D91B42] text-base md:text-xl mt-5 border border-red-800 p-1 w-[50%]  text-center mx-auto bg-[#F8D7DA] " >{errorMessage}</div>
 	{/if}
   
 	{#if isValid && age}
-	  <div class="text-black font-bold text-3xl  text-center mx-auto mt-10">Your age is: {age}</div>
+	  <div class="text-black font-bold text-xl md:text-3xl  text-center mx-auto mt-10">Your age is: {age}</div>
 	{/if}
   </div>
   
